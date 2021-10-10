@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .widget {
+      display: flex;
+      display: block;
+      margin: auto;
+      width: 80%;
+  }
+  .card {
+      border: 1px solid blue;
+      text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 2%;
+  }
+
+  .controls {
+      display: flex;
+      justify-content: center;
+      margin: 2%;
+  }
+
+  button {
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    background-color: white;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    justify-content: center;
+    row-gap: 10px;
+}
