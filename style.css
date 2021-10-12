@@ -5,10 +5,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
   }
-  
-  .widget {
-      margin: auto;
-      width: 80%;
+
+  body {
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
@@ -29,24 +29,24 @@
     background-color: white;
   }
 
-  .card-container {
-    justify-items: center;
-    width: 80vw;
+  .main {
+    width: 80%;
     margin: auto;
-    position: absolute;
-    height: 100%;
+    
+  }
+
+  .card-container {
+    width: 100%;
+    margin-left: 3%;
     }
 
   .card {
-    align-items: center;
     border: 1px solid blue;
     text-align: center;
-    height: 50%;
-    width: 20%;
+    height: 300px;
+    width: 200px;
     display: inline-block;
-    position: relative;
     margin: 1%;
-    float: left;
     background: #cfcfcf;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
