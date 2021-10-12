@@ -7,25 +7,8 @@
   }
   
   .widget {
-      display: flex;
-      display: block;
       margin: auto;
       width: 80%;
-  }
-
-  .all {opacity: 1;
-    visibility: visible;
-}
-
-  .fade-out {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-  .card {
-      border: 1px solid blue;
-      text-align: center;
   }
 
   h1 {
@@ -47,15 +30,46 @@
   }
 
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    justify-content: center;
-    row-gap: 10px;
-}
+    justify-items: center;
+    width: 80vw;
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    }
 
-.footer-box{
-    margin: 10%;
+  .card {
+    align-items: center;
+    border: 1px solid blue;
     text-align: center;
+    height: 50%;
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    margin: 1%;
+    float: left;
+    background: #cfcfcf;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all .35s ease, opacity .2s;
+          transition: all .35s ease, opacity .2s;
+  overflow: hidden;
+  }
+
+  .card.hidden {
+    -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+    width: 0%;
+    opacity: 0;
+    margin: 0;
+  }
+
+
+/* 
+ .fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
 }
+*/
